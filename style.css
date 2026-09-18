@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #16002b,
+        #3b146e,
+        #6a1bb1,
+        #9b4de0
+    );
+
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+}
+
+.tela {
+    background: #ffffff;
+
+    color: #24113f;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4);
+
+    border: 3px solid #a855f7;
+}
+
+h1 {
+    color: #6d28d9;
+
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #6d28d9;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #35105f;
+
+    font-size: 22px;
+
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÕES */
+
+button {
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Botão iniciar */
+
+#botao-iniciar {
+    background: #7c3aed;
+
+    color: white;
+
+    margin-top: 10px;
+}
+
+#botao-iniciar:hover {
+    background: #5b21b6;
+
+    transform: scale(1.05);
+}
+
+
+/* Opções */
+
+#opcoes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.botao-opcao {
+    width: 100%;
+
+    background: #8b5cf6;
+
+    color: white;
+}
+
+.botao-opcao:hover {
+    background: #6d28d9;
+
+    transform: translateY(-2px);
+}
+
+.botao-opcao:disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* Botão próxima */
+
+#botao-proxima {
+    background: #4c1d95;
+
+    color: white;
+
+    margin-top: 10px;
+}
+
+#botao-proxima:hover {
+    background: #371477;
+}
+
+
+/* Resultado */
+
+#resultado {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    min-height: 30px;
+}
+
+
+/* Jogar novamente */
+
+#botao-jogar-novamente {
+    background: #9333ea;
+
+    color: white;
+}
+
+#botao-jogar-novamente:hover {
+    background: #6b21a8;
+
+    transform: scale(1.05);
+}
+
+
+/* Número da pergunta */
+
+#numero-pergunta {
+    color: #7c3aed;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+/* Afirmação final */
+
+#afirmacao-final {
+    background: #f3e8ff;
+
+    color: #581c87;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Esconder telas */
+
+.escondido {
+    display: none;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+    .tela {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
