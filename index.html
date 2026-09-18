@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão 2049</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Tela inicial -->
+        <section id="tela-inicial" class="tela">
+            <h1>🌌 Missão 2049</h1>
+
+            <p>
+                O futuro está em suas mãos!
+            </p>
+
+            <p>
+                Responda às 10 perguntas e descubra como você se sairia
+                diante dos desafios de 2049.
+            </p>
+
+            <button id="botao-iniciar">Iniciar missão</button>
+        </section>
+
+
+        <!-- Tela do jogo -->
+        <section id="tela-jogo" class="tela escondido">
+
+            <h2 id="titulo-missao"></h2>
+
+            <p id="numero-pergunta"></p>
+
+            <h3 id="pergunta"></h3>
+
+            <div id="opcoes"></div>
+
+            <p id="resultado"></p>
+
+            <button id="botao-proxima" class="escondido">
+                Próxima pergunta
+            </button>
+
+        </section>
+
+
+        <!-- Tela final -->
+        <section id="tela-final" class="tela escondido">
+
+            <h2>🎉 Missão concluída!</h2>
+
+            <p id="mensagem-final"></p>
+
+            <p id="afirmacao-final"></p>
+
+            <button id="botao-jogar-novamente">
+                Jogar novamente
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
